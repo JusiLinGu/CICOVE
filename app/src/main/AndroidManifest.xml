@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CICOVE"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NewAccountActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RecoverPassword1Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RecoverPassword2Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MenuColabActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".UsuarioMenuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegistrarMascotaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PerfilMascotaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AgendarCitaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HistorialCitasActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HistorialPacientesHoyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DiagnosticoCitaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PerfilUsuarioActivity"
+            android:exported="false" />
+
+        <activity android:name=".ActualizarMascotaActivity"
+            android:exported="false"/>
+
+        <activity android:name=".ActualizarCitaActivity"
+            android:exported="false"/>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>
